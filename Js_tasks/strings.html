@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 'Hello world';
+        console.log(a);
+
+        let b = "Hey man";
+        console.log(b);
+
+        let c = "Morning";
+        console.log(`Good ${c}`);
+
+        let name = "Jack";
+        let age = 3.5;
+        let city = "chennai";
+
+        console.log(`My name is ${name}, I am ${age} years old and I am from ${city}`);
+
+        let d = "Hey man, this is Jack";
+        console.log(`Hey man, this is "Jack"`);
+
+        let e = "I am a Good boy";
+        console.log('I am a "Good" boy');
+        
+        
+        // String methods
+        let f = "Jayanth is a Software developer";
+        console.log(f.length); //The count includes spaces also
+
+        let g = f.concat("As well as a F1 fan");
+        console.log(g); // Adds the given string value with the original value
+        
+        // Replace
+        console.log(f.replace("Software", "Fullstack")); // replaces the mentioned value with the given input
+        
+        console.log(f.toUpperCase()); // changes the entire string in uppercase format
+
+        console.log(f.toLowerCase()); // changes the entire string in lowercase format
+        
+        // 192.268.000.179
+
+        console.log(f.slice(0, 7)); // slices or separate the string by the given inputs of the index of the strings(start, end)
+
+        console.log(f.indexOf("p")); // give you the index of the given input from beginning of the entire string
+
+        console.log(f.lastIndexOf("d")); // give you the index of the given input from ending of the entire string
+        
+        let h = "   My name is Jack and I am a good boy.";
+        console.log(h.trimStart()); // trims the empty spaces from the beginning of the string
+        
+        let i = "My name is Luna and I am a bad girl.    ";
+        console.log(i.trimEnd()); // trims the empty spaces from the ending of the string
+
+        console.log(h.trimStart().repeat(3)); // repeats the string value as per given inputs .repeat(number)
+
+        console.log(h.includes('g')); // it checks whether the given input is preesnted in the entire string and returns a boolean
+        console.log(h.includes('j'));
+
+        console.log(i.match("L")); // tries the check for the given value whether it is presented in the entire string if yes it will give some information about the matched value else it will give null output
+        
+        console.log(i.charAt(3));
+        // used to provide the single character from the entire string where we need to provide the index value
+
+        console.log(i.charCodeAt(1));
+        console.log(i.charCodeAt(0));
+        // used to provide the ASCII values for the single character from the entire string...ASCII(A-65 and a-97)
+
+        let j = "Jack";
+        console.log(j.padStart(10, "Luna"));
+        // used to add the value at the beginning of the string where we need to provide two values they are length of the whole string we expect and fullfillstring which we want to at the beginning
+
+        let k = "Man";
+        console.log(k.padStart(10, "Onewoman"));
+        // used to add the value at the ending of the string where we need to provide two values they are length of the whole string we expect and fullfillstring which we want to at the end
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function namedFunc() {
+            console.log('I am a named function');
+            
+        }
+
+        let funcExp = function expFunc() {
+            console.log("I am a function expression");
+            
+        }
+        funcExp();
+        function parentFunc() {
+            console.log('I am parent');
+            
+            function childOne() {
+                console.log('I am child one');
+                
+            }
+            childOne();
+
+            function childTwo() {
+                console.log('I am child Two');
+                
+            }
+            childTwo();
+
+            let anFunc = function() {
+                console.log('I am an anonymous function');
+                
+            }
+            anFunc();
+        }
+        parentFunc();
+
+        // Callback functions
+        function jack(a){
+            a();
+            console.log('My name is JACK');
+            
+        }
+        jack(function jess (){
+            console.log('My name is JESS');
+            
+        });
+
+        function printName(a, b){
+            a();
+            console.log('My name is JACK');
+            b();
+        }
+        printName(function joel(){
+            console.log('I am JOEL');
+            
+        }, function moi() {
+            console.log('I am MOI');
+            
+        });
+
+        // Higher order function
+        function printNum (c) {
+            console.log(c+100);
+        }
+        function bonus (a,b) {
+            let res = a(b);
+            console.log(res);
+        }
+        bonus(printNum, 200);
+    </script>
+</body>
+</html>

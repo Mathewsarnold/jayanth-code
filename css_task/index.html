@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Pesudo class</title>
+    <style>
+        a:link{
+            color: chartreuse;
+        }
+        a:active {
+            color: yellow;
+        }
+        a:visited {
+            color: darkcyan;
+        }
+
+        input:focus {
+            color: darkgreen;
+            background-color: darkorange;
+            width: 100px;
+        }
+        [type="checkbox"]:checked {
+            height: 50px;
+            width: 50px;
+            accent-color: red;
+        }
+        [type="radio"]:checked {
+            height: 50px;
+            width: 50px;
+            accent-color: darkcyan;
+        }
+        /* p:hover {
+            background-color: cornflowerblue;
+            color: white;
+            text-decoration: underline;
+        } */
+        div > h1:first-child {
+            color: blue;
+            background-color: antiquewhite;
+        }
+        div > h1:last-child {
+            color: blue;
+            background-color: aquamarine;
+        }
+        div > h1:nth-child(3) {
+            color: red;
+            background-color: yellow;
+        }
+        #players > h1:nth-child(odd) {
+            color: orange;
+            background-color: blue;
+            text-align: center;
+        }
+        #players > h1:nth-child(even) {
+            color: blue;
+            background-color: white;
+        }
+        #fOt > p:first-of-type {
+            color: green;
+            background-color: yellow;
+        }
+        #lOt > h1:last-of-type {
+            color: pink;
+            background-color: aquamarine;
+        }
+        [name] {
+            color: darkolivegreen;
+            background-color: azure;
+        }
+        [title="test"]{
+            color: orange;
+            background-color: black;
+        }
+        [title~="yestest"] {
+            color: darkslateblue;
+            background-color: darksalmon;
+        }
+        [title|="newtest"] {
+            color: darkblue;
+            background-color: pink;
+        }
+        [title$="itest"] {
+            color: darkred;
+            background-color: orange;
+        }
+        #testtt [title*="itest"] {
+            color: darkslategray;
+            background-color: aqua;
+        }
+        #demo1 {
+            color: rebeccapurple;
+        }
+        #demo2 {
+            text-align: left;
+            color: blue;
+            background-color: yellow;
+        }
+        #demo3 {
+            text-align: center;
+            color: blue;
+            background-color: yellow;
+        }
+        #demo4 {
+            text-align: right;
+            color: blue;
+            background-color: yellow;
+        }
+        #demo5 {
+            text-decoration: underline;
+        }
+        #demo6 {
+            text-decoration: overline;
+        }
+        #demo7 {
+            text-decoration: line-through;
+        }
+        #demo8 {
+            text-shadow: 3px 4px 6px green;
+        }
+        #demo9 {
+            text-transform: uppercase;
+        }
+        #demo10 {
+            text-transform: lowercase;
+        }
+        #demo11 {
+            text-transform: capitalize;
+        }
+        #demo12 {
+            letter-spacing: 10px;
+            text-shadow: 3px 4px 6px gray;
+        }
+        #demo13 {
+            word-spacing: 450px;
+        }
+        #demo14 {
+            text-indent: 500px;
+        }
+    </style>
+</head> 
+<body>
+    <h1>test</h1>
+
+    <a href="www.amazon.com">Amazon.com</a>
+    <hr>
+
+    <input type="text" name="" id="">
+    <hr>
+
+    <input type="checkbox" name="" id="">
+    <input type="radio" name="" id="">
+    <hr>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quibusdam hic commodi! Aspernatur sed optio sit! Porro beatae pariatur praesentium illum voluptatum? Neque sit accusantium quo id iusto, quasi culpa maxime in harum quibusdam sint aut quia deleniti aperiam libero blanditiis officia doloribus quod ex. Porro vero praesentium dolores reprehenderit eos corrupti ea maxime, fuga debitis dolorum expedita quis soluta eius quaerat animi officia cupiditate. Dolore perspiciatis sed eligendi, repudiandae odio ipsam suscipit, nobis sunt eveniet temporibus necessitatibus commodi delectus iure aperiam molestiae veritatis voluptates impedit ratione optio, at tenetur? Recusandae, nemo qui. Cum dicta explicabo dolore? Sed, eum mollitia?</p>
+    <hr>
+
+    <div>
+        <h1>Jayanth</h1>
+        <p>Jac</p>
+        <h1>Jockey</h1>
+        <h2>Jack</h2>
+    </div>
+
+    <div>
+        <p>Jackson</p>
+        <h2>Joy</h2>
+        <h1>Jack</h1>
+        <p>Jim</p>
+        <h1>John</h1>
+    </div>
+
+    <div id="players">
+        <h1>Sachin</h1>
+        <h1>Rohit</h1>
+        <h1>kholi</h1>
+        <h1>Samson</h1>
+        <h1>Dhoni</h1>
+        <h1>Jadeja</h1>
+        <h1>Axar</h1>
+        <h1>Chahal</h1>
+        <h1>Shardhul</h1>
+        <h1>Bumrah</h1>
+    </div>
+
+    <div id="fOt">
+        <h1>Jayanth</h1>
+        <p>Jack</p>
+        <h1>Joel</h1>
+        <h3>Jackson</h3>
+        <h2>Juel</h2>
+        <p>Suel</p>
+        <h2>Jay</h2>
+    </div>
+
+    <div id="lOt">
+        <h1>Jayanth</h1>
+        <p>Jack</p>
+        <h1>Joel</h1>
+        <h3>Jackson</h3>
+        <h2>Juel</h2>
+        <p>Suel</p>
+        <h2>Jay</h2>
+    </div>
+
+    <hr>
+
+    <p id="t1">Test1</p>
+    <p class="t2">Test2</p>
+    <p id="t3">Test3</p>
+    <p title="t4">Test4</p>
+    <p name="t4">Test5</p>
+
+    <hr>
+
+    <p title="testt">Test1</p>
+    <p title="test">Test2</p>
+    <p title=" test">Test3</p>
+    <p title=" test ">Test4</p>
+    <p title="test ">Test5</p>
+
+    <hr>
+
+    <p title="yestestt">Test1</p>
+    <p title=" yestest">Test2</p>
+    <p title=" yestest ">Test3</p>
+    <p title="yestest ">Test4</p>
+    <p title="yestest">Test5</p>
+
+    <hr>
+
+    <p title="newtest-test">Test1</p>
+    <p title=" newtest">Test2</p>
+    <p title=" newtest ">Test3</p>
+    <p title="newtest ">Test4</p>
+    <p title="newtest">Test5</p>
+
+    <hr>
+
+    <p title="itest">Test1</p>
+    <p title=" itest">Test2</p>
+    <p title=" itest-test ">Test3</p>
+    <p title="itest-tes ">Test4</p>
+    <p title="newtestest">Test5</p>
+
+    <hr>
+
+    <p title="yitest">Test1</p>
+    <p title=" ytest">Test2</p>
+    <p title=" itest-yitest">Test3</p>
+    <p title="y-tes ">Test4</p>
+    <p title=" yitest">Test5</p>
+
+    <hr>
+<div id="testtt">   
+    <p title="mytest ">Test1</p>
+    <p title=" mytest">Test2</p>
+    <p title=" itestmytest">Test3</p>
+    <p title=" mytest ">Test4</p>
+    <p title=" what-mytest">Test5</p>
+    <p title=" mytest-what-">Test6</p>
+</div>
+
+<h1 id="demo1">Hello world</h1>
+
+<h1 id="demo2">Hello world</h1>
+
+<h1 id="demo3">Hello world</h1>
+
+<h1 id="demo4">Hello world</h1>
+
+<h1 id="demo5">Hello world</h1>
+
+<h1 id="demo6">Hello world</h1>
+
+<h1 id="demo7">Hello world</h1>
+
+<h1 id="demo8">Hello world</h1>
+
+<h1 id="demo9">Hello world</h1>
+
+<h1 id="demo10">Hello world</h1>
+
+<p id="demo11">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cupiditate magnam voluptate minima excepturi. Facere laboriosam eum autem nemo iste, excepturi repellat soluta maiores quam reiciendis veniam libero eius alias iusto perferendis vel quod adipisci ex? Nam hic laudantium nisi. Maxime architecto nihil iusto aliquid laudantium libero, ut consequuntur itaque animi saepe aperiam repellendus accusantium quasi! Maxime, odit illo harum quae obcaecati magnam, cupiditate sapiente nobis mollitia minus voluptate voluptates sint, eligendi impedit recusandae consequuntur magni eius necessitatibus deserunt blanditiis in eos? Mollitia sed quibusdam quam quos error quasi recusandae suscipit nemo odio. Corrupti ad, qui repellendus accusamus iste iusto.</p>
+
+<h1 id="demo12"> Hello guys</h1>
+
+<h1 id="demo13"> Hello guys</h1>
+
+<p id="demo14">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ullam nostrum molestiae suscipit voluptate officia enim quibusdam totam recusandae? Rerum recusandae nostrum iste accusantium aspernatur dolore quibusdam, possimus ratione voluptates consequatur cum maiores. Dolores nesciunt odit sed recusandae eius culpa, vel maiores fugit rerum odio beatae tempore assumenda illo deserunt sequi! Explicabo voluptatibus minus, unde, id commodi harum quo amet error laborum blanditiis rerum sunt corrupti qui corporis magnam quisquam obcaecati inventore facere nulla ducimus cumque aut quam accusantium consequuntur? Tenetur, illo. Et unde, eius at cumque fugit ut aliquid vel perferendis consequuntur saepe a consectetur quasi, optio quos totam!</p>
+
+</body>
+</html>

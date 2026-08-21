@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let a = 100;
+        let b = 200;
+
+        if(a+b == 300){
+            alert('yes 300');
+        }
+
+        if(a>b){
+            alert('a is greater than b');
+        } else {
+            alert('no a is not greater than b');
+        }
+
+        if(a > b) {
+            alert('yes a is greater than b');
+        } else if (b > a) {
+            alert('yes b is greater than a');
+        } else {
+            alert('Iam from else');
+        }
+
+        let day = 3;
+        let nameDay;
+
+        switch (day) {
+            case 1:
+                nameDay = "Mon";
+                break;
+            case 2:
+                nameDay = "Tues";
+                break;
+            case 3:
+                nameDay = "Wed";
+                break;
+            case 4:
+                nameDay = "Thurs";
+                break;
+            case 5:
+                nameDay = "Fri";
+                break;
+            case 6:
+                nameDay = "Sat";
+                break;
+            case 7:
+                nameDay = "Sun";
+                break;
+            default:
+                nameDay = "Invalid day";
+                break;
+        }
+
+        console.log(nameDay);
+        
+    </script>
+</body>
+</html>

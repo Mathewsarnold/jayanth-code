@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in JS</title>
+</head>
+<body>
+    <div id="parentDiv1">
+        <h1 id="demo1">Jayanth</h1>
+        <p>Joel</p>
+        <h2 class="demo2">Arun</h2>
+        <p>Anand</p>
+        <h1 class="demo2" id="sebbs">Sebbs</h1>
+        <h2 id="jcksn">Jackson</h2>
+        <p class="demo2" id="demo2">Seehouse</p>
+    </div>
+
+    <hr>
+    <div id="parentDiv">
+
+    </div>
+    
+    <script>
+
+        let a = document.getElementById("demo1");
+        console.log(a);
+        
+        let b = document.getElementsByClassName("demo2");
+        console.log(b);
+
+        let c = document.getElementsByTagName("p");
+        console.log(c);
+        
+        let d = document.querySelector("p");
+        console.log(d);
+        
+        let e = document.querySelectorAll(".demo2");
+        console.log(e);
+
+        // DOM properties
+
+        console.log(document.head);
+        
+        console.log(document.body);
+        
+        console.log(document.title);
+        
+        console.log(document.timeline);
+        
+
+        let childOne = document.createElement("h1");
+        childOne.innerText = "Jack the GSD";
+        console.log(childOne);
+        
+
+        let parentEl = document.getElementById("parentDiv");
+        parentEl.appendChild(childOne);
+
+        console.log(parentEl);
+        
+        let demoEl = document.getElementById("demo2");
+        demoEl.remove();
+
+        let p1 = document.getElementById("parentDiv1");
+        console.log(p1);
+        
+        let seb = document.getElementById("sebbs");
+        console.log(seb);
+        
+        seb.replaceChildren(childOne);
+        console.log(p1);
+        
+        let jcksn = document.getElementById('jcksn');
+        console.log(jcksn);
+        
+        p1.insertBefore(jcksn, a)
+
+    </script>
+</body>
+</html>

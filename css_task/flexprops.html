@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            width: 900px;
+            height: 600px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+        }
+        .cls {
+            width: 80px;
+            height: 80px;
+            border: 1px solid black;
+            color: white;
+        }
+        #child1 {
+            background-color: red;
+            order: 4;
+            flex-shrink: 40;
+        }
+        #child2 {
+            background-color: pink;
+            order: 1;
+            flex-grow: 70;
+        }
+        #child3 {
+            background-color: crimson;
+            order: 2;
+            align-self: center;
+        }
+        #child4 {
+            background-color: cornflowerblue;
+            order: 3;
+            /* flex-grow: 80; */
+            flex-shrink: 70;
+            align-self: flex-end;
+        }
+        #child5 {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child1" class="cls">Test1</div>
+        <div id="child2" class="cls">Test2</div>
+        <div id="child3" class="cls">Test3</div>
+        <div id="child4" class="cls">Test4</div>
+        <div id="child5" class="cls">Test5</div>
+        <div id="child1" class="cls">Test6</div>
+        <div id="child2" class="cls">Test7</div>
+        <div id="child3" class="cls">Test8</div>
+        <div id="child4" class="cls">Test9</div>
+        <div id="child5" class="cls">Test10</div>
+        <div id="child1" class="cls">Test11</div>
+        <div id="child2" class="cls">Test12</div>
+        <div id="child3" class="cls">Test13</div>
+        <div id="child4" class="cls">Test14</div>
+        <div id="child5" class="cls">Test15</div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits = ["Apple","Mango","Orange","Pineapple","Guava","Watermelon"];
+        let res = fruits.filter((a)=> a=="Mango");
+        console.log(res);
+        
+        let res1 = fruits.filter((a)=>a<"O");
+        console.log(res1);
+         
+        let arr = [12, 30, 60, 90, 100, 300, 600, 900];
+        let res2 = arr.filter((a)=> a> 300);
+        console.log(res2);
+        
+        let res3 = arr.filter((a)=> a< 50 || a>300);
+        console.log(res3);
+        
+
+    </script>
+</body>
+</html>

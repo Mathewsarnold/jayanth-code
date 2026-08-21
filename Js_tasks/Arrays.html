@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [23,67,45,93,10,78,34]; // Homogeneous array
+        console.log(arr);
+
+        console.log(arr[0]);
+        console.log(arr[2]);
+        console.log(arr[4]);
+
+        let arr1 = ["Test", "test1", 20, 7n, "860", true, null]; // Heterogeneous array
+        console.log(arr1.length);
+        
+        console.log(arr1[7]);
+        console.log(arr1[5]);
+        
+        arr1[8] = "test2";
+        console.log(arr1);
+
+        arr1[12] = 90;
+        console.log(arr1);
+
+        //Nested array
+
+        let arr2 = [10, 20, [30,46,50], 70, 90, [110, 120, 130], 150];
+        console.log(arr2[2][1]);
+        console.log(arr2[4]);
+        console.log(arr2[5][0]);
+
+        let arr3 = ["mango", "banana", ["dragonfruit", "guava"], "kiwi", "apple", ["orange", "pineppale", "jackfruit"]];
+        console.log(arr3[2][1]);
+        console.log(arr3[5][2]);
+
+        // array.push(value)
+        let a = arr2.push("30");
+        let b = arr2.push(30);
+        console.log(arr2);
+
+        // array.pop()
+        let c = arr3.pop();
+        console.log(arr3);
+        
+        // array.shift()
+        let d = arr3.shift();
+        console.log(arr3);
+        
+        // array.unshift(value)
+        arr3.unshift("JACK");
+        console.log(arr3);
+
+        // array.slice(startindex, endindex)
+        let e = arr2.slice(0, 2);
+        console.log(arr2);
+        console.log(e);
+
+        // array.splice(startindex, endindex)
+        let f = arr2.splice(0,1);
+        console.log(f);
+        console.log(arr2);
+        
+        // array.indexOf(value)
+        let g = arr2.indexOf(90);
+        console.log(g);
+        
+        // array.at(index)
+        let h = arr2.at(6);
+        console.log(h);
+
+        // array.reverse()
+        let i = arr3.reverse();
+        console.log(i);
+
+        // array.includes()
+        let k = arr3.includes("banana");
+        console.log(k);
+        
+        let l = arr3.join("is a fruit");
+        console.log(l);
+        
+
+    </script>
+</body>
+</html>

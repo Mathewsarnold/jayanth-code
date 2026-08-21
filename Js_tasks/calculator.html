@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">First number :</label>
+    <input type="number" name="" id="num1"><br><br>
+
+    <label for="">First number :</label>
+    <input type="number" name="" id="num2"><br><br>
+
+    <button id="add" onclick="addition()">ADD</button>
+    <button id="sub" onclick="subtraction()">SUB</button>
+    <button id="mul" onclick="multiplication()">MUL</button>
+    <button id="div" onclick="divison()">DIV</button> <br><br>
+
+    <label for="">Result :</label>
+    <strong id="output"></strong>
+
+
+    <script>
+        let addition = ()=> {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let res = parseInt(num1)+parseInt(num2);
+            document.getElementById("output").innerHTML = res;
+        }
+        let subtraction = ()=> {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let res = parseInt(num1)-parseInt(num2);
+            document.getElementById("output").innerHTML = res;
+        }
+        let multiplication = ()=> {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let res = parseInt(num1)*parseInt(num2);
+            document.getElementById("output").innerHTML = res;
+        }
+        let divison = ()=> {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let res = parseInt(num1)/parseInt(num2);
+            document.getElementById("output").innerHTML = res;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = setTimeout(()=>{
+            console.log("Hello world!!!");
+        }, 2000);
+        setTimeout(()=>{
+            console.log("Hey guys");
+        }, 7000);
+        setTimeout(()=>{
+            console.log("Hi arun");
+        }, 4000);
+        let b = setTimeout(()=>{
+            console.log("Conor mcGregor lost");
+        }, 3000);
+        setTimeout(()=>{
+            console.log("Holloway wins");
+        }, 5000);
+
+        clearTimeout(a);
+        clearTimeout(b);
+
+        let c = setInterval(()=> {
+            console.log("I'm Jack"); 
+        }, 3000);
+        // clearInterval(c);
+    </script>
+</body>
+</html>
