@@ -92,7 +92,8 @@ public class ScannerTasks {
         System.out.println("Enter contact number :");
         Long pContact = scn.nextLong();
         System.out.println("Enter address :");
-        String pAddress = scn.nextLine();
+        String pAddress = scn.next();
+        scn.nextLine();
         System.out.println("Enter pincode :");
         int pPincode = scn.nextInt();
         System.out.println("Enter Taluk :");
