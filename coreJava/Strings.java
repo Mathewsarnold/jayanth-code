@@ -11,21 +11,25 @@ public class Strings {
         System.out.println("Enter String 1 : ");
         String valOne = scn.next();
         
-        System.out.println("Enter String 2 : ");
-        String valTwo = scn.next();
+        // System.out.println("Enter String 2 : ");
+        // String valTwo = scn.next();
 
-        System.out.println("Enter String 3 : ");
-        String valThree = scn.next();
+        // System.out.println("Enter String 3 : ");
+        // String valThree = scn.next();
 
-        System.out.println("Entered Strings are " + valOne + ", " + valTwo + ", "+ valThree);
+        // System.out.println("Entered Strings are " + valOne + ", " + valTwo + ", "+ valThree);
         // System.out.println(valOne.equals(valTwo));
         // System.out.println(valTwo.equals(valThree));
         // System.out.println(valThree.equals(valOne));
 
         // .equalsIgnoreCase();
-        System.out.println(valOne.equalsIgnoreCase(valTwo));
-        System.out.println(valTwo.equalsIgnoreCase(valThree));
-        System.out.println(valThree.equalsIgnoreCase(valOne));
-        
+        // System.out.println(valOne.equalsIgnoreCase(valTwo));
+        // System.out.println(valTwo.equalsIgnoreCase(valThree));
+        // System.out.println(valThree.equalsIgnoreCase(valOne));
+
+        System.out.println("Enter the index :");
+        int indx = scn.nextInt();
+        char indxChr = valOne.charAt(indx); 
+        System.out.println("The " + indx + " index of " + valOne + " is " + indxChr);
     }
 }
